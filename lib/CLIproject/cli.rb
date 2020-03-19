@@ -1,6 +1,9 @@
 class CLIproject::Cli
   def start
-
+    
+    puts "Pokémon".red 
+    puts "     The Card Game".white
+    puts "                Base Set".blue 
     welcome 
 
     input = gets.strip.downcase 
@@ -12,24 +15,27 @@ class CLIproject::Cli
   end  
 
   def line_break
-   puts "=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+   puts "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=".red
   end 
 
-  def welcome 
-    puts "Welcome to Pokemon The Card Game 'The Base set' CLI search engine!"
-    line_break
-    puts "Please type in the name of the card you would like learn more about!"
+  def welcome
+    line_break 
+    puts "Welcome to Pokemon The Card Game 'The Base set' CLI search engine!".yellow
+    puts "Please type in the name of the card you would like learn more about!".blue 
     line_break
   end 
 
   def options 
-    puts "PLease select an attribute from below to learn more about the card!"
     line_break
-    sleep(2)
-    puts "Want to know what type this card is? Enter 'type'."
-    puts "want to know what attacks this card has? Enter 'attacks'."
-    puts "Want to know what this cards weaknesses are? Enter 'weaknesses'"
-    puts "Want to know how rare this card is?? Enter 'rarity'"
+    puts "PLease select an attribute from below to learn more about the card!".yellow
+    line_break
+    puts "Want to know what type this card is? Enter 'type'.".blue
+    sleep(1)
+    puts "want to know what attacks this card has? Enter 'attacks'.".blue
+    sleep(1)
+    puts "Want to know what this cards weaknesses are? Enter 'weaknesses'".blue
+    sleep(1)
+    puts "Want to know how rare this card is?? Enter 'rarity'".blue
     line_break
     attributes_choices 
     choice_prompts 
@@ -39,20 +45,26 @@ class CLIproject::Cli
   def attributes_choices  
     while input = gets.strip.downcase 
       case input 
-      when "type" 
+      when "type"
+        line_break 
         card_is 
         break 
       when "attacks"
+        line_break 
         attacks_are
         break
       when "weaknesses" 
+        line_break 
         weaknesses_are
         break 
       when "rarity" 
+        line_break 
         how_rare 
         break 
       else !input.include?("type" || "weaknesses" || "rarity" || "attacks")
-        puts "I do not recognize that input! Please try again.  Type either 'type', 'attacks', 'weaknesses' or 'rarity'."
+        line_break
+        puts "I do not recognize that input! Please try again.  Type either 'type', 'attacks', 'weaknesses' or 'rarity'.".yellow
+        line_break
       end
     end 
   end 
@@ -61,7 +73,6 @@ class CLIproject::Cli
     while input = gets.chomp.downcase 
       case input 
       when "attributes"
-         
         options 
         break 
       when "pokemon"
@@ -69,9 +80,12 @@ class CLIproject::Cli
         start 
         break 
       when "exit"
-        puts "Thank you for using The Pokemon Card Game 'Base Set' CLI search engine!"
+        line_break
+        puts "Thank you for using The Pokemon Card Game 'Base Set' CLI search engine!".yellow
         exit 
       else input != ("attributes" || "pokemon" || "exit") 
+        line_break
+        puts "I do not recognize that input! Please try again.  Type either 'attributes', 'pokemon' or 'exit'.".yellow
         choice_prompts 
       end 
     end 
@@ -106,10 +120,13 @@ class CLIproject::Cli
   end 
 
   def choice_prompts
-    line_break 
-    puts "Would you like to look up other attributes for this card? Enter 'attributes'!" 
-    puts "Would you like to look up another pokemon? Enter 'pokemon'!"
-    puts "Would you like to quit the The Pokemon Card Game 'Base Set' CLI search engine? Type 'exit'."
+    line_break
+    puts "Would you like to look up other attributes for this card? Enter 'attributes'!".blue 
+    sleep(1)
+    puts "Would you like to look up another pokemon? Enter 'pokemon'!".blue
+    sleep(1)
+    puts "Would you like to quit the The Pokemon Card Game 'Base Set' CLI search engine? Type 'exit'.".blue
+    
     line_break
   end 
 

@@ -3,7 +3,9 @@ class CLIproject::Api
     url = "https://api.pokemontcg.io/v1/cards?name=#{name}&setCode=base1"
     response = HTTParty.get(url)
     if response["cards"] == []
-      puts "Uhoh! Please double check the spelling of the pokemon card! Can't quite find that one."
+      puts "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=".red
+      puts "Uhoh! Please double check the spelling of the pokemon card! Can't quite find that one.".yellow
+      puts "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=".red
       input = gets.chomp.downcase 
       self.fetch(input) 
     else 

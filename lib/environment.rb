@@ -1,5 +1,6 @@
 require "./lib/CLIproject/version"
 require "resolv-replace"
+require "colorize"
 
 require_relative "./CLIproject/cli"
 require_relative "./CLIproject/api"

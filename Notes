@@ -28,18 +28,3 @@ steps on how to achieve this
   4. Rarity
 5. The user will give an input choice and with that input will return the specific attribute's specific details 
 7. Prompt asking about looping back to look up other attributes, a new pokemon or to exit the program. 
-
-##save this art 
-
-# puts "                                       ,'\                              "
-    # puts "     _.----.        ____         ,'  _\   ___    ___     ____"
-    # puts " _,-'       `.     |    |  /`.   \,-'    |   \  /   |   |    \  |`."
-    # puts "  \      __   \    '-.  | /   `.  ___    |    \/    |   '-.   \ |  |"
-    # puts "   \    \ \   |  __  |  |/    ,','_  `.  |          | __  |    \|  |"
-    # puts "    \    \/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |""
-    # puts "     \     ,-'/  /   \    ,'   | \/ / ,`.|         /  /   \  |     |"
-    # puts "      \    \ |   \_/  |   `-.  \    `'  /|  |    ||   \_/  | |\    |"
-    # puts "       \    \ \      /       `-.`.___,-' |  |\  /| \      /  | |   |""
-    # puts "        \    \ `.__,'|  |`-._    `|      |__| \/ |  `.__,'|  | |   |"
-    # puts "         \_.-'       |__|    `-._ |              '-.|     '-.| |   |"
-    # puts "                                 `'                            '-._|"
