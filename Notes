@@ -1,0 +1,45 @@
+#github steps when saving your code during your project 
+
+1. git add . 
+2. git commit -m "some message goes here highlighting what you did"
+3. git push origin master 
+
+
+Things I need to do for this project
+
+1. Must be at least 2 levels deep 
+2. Must use a scraper or an API
+3. Get the information from the API and save it into objects 
+
+steps on how to achieve this 
+1. pick an API (Pokemon TGC)
+2. Make sure we are able to obtain all of the information we need from the API
+3. Start thinking about the flow of the project 
+
+
+#flow of project 
+1. I wanna welcome the user to Pokemon TGC 'The Base Set' 
+2. I want to ask the user what specific card they would like to look up? 
+3. I will then get the information from the API and save it so we can use it later 
+4. I will then display specific attributes the user can look up by input choice. 
+  1. Type
+  2. Weaknesses 
+  3. Attacks 
+  4. Rarity
+5. The user will give an input choice and with that input will return the specific attribute's specific details 
+7. Prompt asking about looping back to look up other attributes, a new pokemon or to exit the program. 
+
+##save this art 
+
+# puts "                                       ,'\                              "
+    # puts "     _.----.        ____         ,'  _\   ___    ___     ____"
+    # puts " _,-'       `.     |    |  /`.   \,-'    |   \  /   |   |    \  |`."
+    # puts "  \      __   \    '-.  | /   `.  ___    |    \/    |   '-.   \ |  |"
+    # puts "   \    \ \   |  __  |  |/    ,','_  `.  |          | __  |    \|  |"
+    # puts "    \    \/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |""
+    # puts "     \     ,-'/  /   \    ,'   | \/ / ,`.|         /  /   \  |     |"
+    # puts "      \    \ |   \_/  |   `-.  \    `'  /|  |    ||   \_/  | |\    |"
+    # puts "       \    \ \      /       `-.`.___,-' |  |\  /| \      /  | |   |""
+    # puts "        \    \ `.__,'|  |`-._    `|      |__| \/ |  `.__,'|  | |   |"
+    # puts "         \_.-'       |__|    `-._ |              '-.|     '-.| |   |"
+    # puts "                                 `'                            '-._|"

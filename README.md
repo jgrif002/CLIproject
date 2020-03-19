@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/CLIproject`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+#Welcome to Pokemon The Card Game 'The Base set' CLI search engine!  In this search engine anyone can look up a pokemon card from the original base set and learn more about it.  From there the user can learn more about it's attributes such as it's "type", "attacks", "weakneses" and or it's card rarity.  From there the user can either continue to look up more attributes, search a different card or if they are done they can exit the program.  
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The CLI Pokemon card application will direct the user through an easy to follow command interface with different required inputs that will be provided to the user by the program at each step. 
 
 ## Development
 
