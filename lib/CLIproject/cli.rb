@@ -126,7 +126,6 @@ class CLIproject::Cli
     puts "Would you like to look up another pokemon? Enter 'pokemon'!".blue
     sleep(1)
     puts "Would you like to quit the The Pokemon Card Game 'Base Set' CLI search engine? Type 'exit'.".blue
-    
     line_break
   end 
 
