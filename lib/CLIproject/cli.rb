@@ -43,52 +43,45 @@ class CLIproject::Cli
   end 
 
   def attributes_choices  
-    while input = gets.strip.downcase 
+     input = gets.strip.downcase 
+      line_break 
       case input 
-      when "type"
-        line_break 
+      when "type" 
         card_is 
-        break 
-      when "attacks"
-        line_break 
+         
+      when "attacks" 
         attacks_are
-        break
-      when "weaknesses" 
-        line_break 
+        
+      when "weaknesses"  
         weaknesses_are
-        break 
-      when "rarity" 
-        line_break 
+         
+      when "rarity"  
         how_rare 
-        break 
-      else !input.include?("type" || "weaknesses" || "rarity" || "attacks")
-        line_break
+         
+      else 
         puts "I do not recognize that input! Please try again.  Type either 'type', 'attacks', 'weaknesses' or 'rarity'.".yellow
         line_break
+        attributes_choices
       end
-    end 
   end 
 
   def more_choices
-    while input = gets.chomp.downcase 
+      input = gets.chomp.downcase 
+      line_break 
       case input 
       when "attributes"
         options 
-        break 
       when "pokemon"
         CLIproject::PokemonCard.all.clear
-        start 
-        break 
+        start
       when "exit"
-        line_break
         puts "Thank you for using The Pokemon Card Game 'Base Set' CLI search engine!".yellow
         exit 
-      else input != ("attributes" || "pokemon" || "exit") 
-        line_break
+      else 
         puts "I do not recognize that input! Please try again.  Type either 'attributes', 'pokemon' or 'exit'.".yellow
         choice_prompts 
+        more_choices
       end 
-    end 
   end
   
   def card_is
